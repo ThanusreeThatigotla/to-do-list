@@ -69,6 +69,41 @@ body {
       padding: 4px 8px;
       font-size: 12px;
     }
-    .edit-btn { background: #2196F3; }
-    .delete-btn { background: #f44336; }
-    .complete-btn { background: #9C27B0; }
+    .edit-btn {
+         background: #2196F3;
+         }
+    .delete-btn {
+         background: #f44336; 
+        }
+
+    .complete-btn {
+         background: #9C27B0; 
+        }
+    @media(max-width:600px){
+        body{
+            align-items: flex-start;
+        }
+        .container{
+            width:100%;
+            padding:15px;
+        }
+        .input-group{
+            flex-direction: cloumn;
+        }
+        input[type="text"],input[type="datatime-local"],button{
+            width:100%;
+        }
+        li{
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+        .actions{
+            margin-top: 5px;
+            width:100%;
+            display:flex;
+            justify-content: flex-end;
+        }
+
+        
+    }
